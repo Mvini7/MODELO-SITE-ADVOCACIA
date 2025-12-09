@@ -109,13 +109,12 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  color: var(--color-white);
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  border-bottom-color: var(--color-yellow);
+.nav-link:hover {
+  color: var(--color-yellow);
 }
 
 /* Mobile Menu Toggle */
