@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Silva & Associados - Advocacia</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Added Boxicons library -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added EmailJS library for email functionality -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BEGIN: MainHeader -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo Section -->
+          <div class="logo">
+            <svg
+              class="logo-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.036.243c-2.132 0-4.14-.356-6-1m-6 0l2.62-10.726A1.061 1.061 0 015.25 5.491a5.988 5.988 0 012.036-.243c2.132 0 4.14.356 6 1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <div>
+              <h1 class="logo-title">Silva & Associados</h1>
+              <p class="logo-subtitle">Advocacia</p>
+            </div>
+          </div>
+
+          <!-- Main Navigation -->
+          <nav class="nav" id="mainNav">
+            <ul class="nav-list">
+              <li><a class="nav-link active" href="#inicio">Início</a></li>
+              <li><a class="nav-link" href="#areas">Áreas de Atuação</a></li>
+              <li><a class="nav-link" href="#equipe">Equipe</a></li>
+              <li><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+
+    <main>
+      <!-- BEGIN: HeroSection -->
+      <section class="hero" id="inicio">
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80"
+            alt="Escritório de advocacia"
+          />
+        </div>
+        <div class="hero-content">
+          <h2 class="hero-title">
+            DEFENDENDO<br />
+            SEUS DIREITOS<br />
+            COM EXCELÊNCIA
+          </h2>
+          <p class="hero-subtitle">Comprometidos com a ética e resultados.</p>
+          <a class="btn btn-primary" href="#contato">AGENDE UMA CONSULTA</a>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+
+      <!-- BEGIN: AreasDeAtuacaoSection -->
+      <section class="section section-light" id="areas">
+        <div class="container">
+          <h2 class="section-title">Áreas de Atuação</h2>
+          <div class="cards-grid">
+            <!-- Card 1: Direito Civil -->
+            <div class="card">
+              <div class="card-icon">
+                <!-- Replaced SVG with Boxicons gavel icon for law/justice -->
+                <i class="bx bxs-badge-check"></i>
+              </div>
+              <h3 class="card-title">Direito Civil</h3>
+              <p class="card-text">
+                Atuação em contratos, responsabilidade civil, direito de família
+                e sucessões com excelência e dedicação.
+              </p>
+              <a class="card-link" href="#">Saiba Mais</a>
+            </div>
+
+            <!-- Card 2: Direito Trabalhista -->
+            <div class="card">
+              <div class="card-icon">
+                <!-- Replaced SVG with Boxicons briefcase icon for business/work -->
+                <i class="bx bxs-briefcase"></i>
+              </div>
+              <h3 class="card-title">Direito Trabalhista</h3>
+              <p class="card-text">
+                Defesa dos direitos de trabalhadores e empregadores em ações
+                judiciais e acordos extrajudiciais.
+              </p>
+              <a class="card-link" href="#">Saiba Mais</a>
+            </div>
+
+            <!-- Card 3: Direito Empresarial -->
+            <div class="card">
+              <div class="card-icon">
+                <!-- Replaced SVG with Boxicons handshake icon for agreements/partnerships -->
+                <i class="bx bx-unite"></i>
+              </div>
+              <h3 class="card-title">Direito Empresarial</h3>
+              <p class="card-text">
+                Assessoria jurídica completa para empresas, contratos comerciais
+                e recuperação judicial.
+              </p>
+              <a class="card-link" href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: AreasDeAtuacaoSection -->
+
+      <!-- BEGIN: NossaEquipeSection -->
+      <section class="section section-light" id="equipe">
+        <div class="container">
+          <h2 class="section-title">Nossa Equipe</h2>
+          <div class="cards-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+              <div class="team-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80"
+                  alt="Dr. Marcos Andrade"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Dr. Marcos Andrade</h3>
+                <p class="team-role">Direito Civil e Empresarial</p>
+                <a class="card-link" href="#contato">Saiba Mais</a>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+              <div class="team-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                  alt="Dra. Fernanda Garcia"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Dra. Fernanda Garcia</h3>
+                <p class="team-role">Direito Trabalhista</p>
+                <a class="card-link" href="#contato">Saiba Mais</a>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card">
+              <div class="team-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-be9c29b29330?w=400&q=80"
+                  alt="Dr. Pedro Santos"
+                />
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">Dr. Pedro Santos</h3>
+                <p class="team-role">Direito Penal</p>
+                <a class="card-link" href="#contato">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: NossaEquipeSection -->
+
+      <!-- BEGIN: TestimonialsSection -->
+      <section class="section section-dark testimonials">
+        <div class="container">
+          <h2 class="section-title">O que dizem nossos clientes</h2>
+          <div class="carousel-container">
+            <button
+              class="carousel-btn carousel-btn-prev"
+              id="prevBtn"
+              aria-label="Depoimento anterior"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="carousel">
+              <div class="carousel-track" id="carouselTrack">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide active">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80"
+                        alt="Cliente"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <p class="testimonial-quote">
+                        "Profissionais extremamente competentes! Resolveram meu
+                        caso com rapidez e eficiência. Recomendo o escritório
+                        Silva & Associados para quem busca excelência em
+                        advocacia."
+                      </p>
+                      <p class="testimonial-author">Ana Martins</p>
+                      <p class="testimonial-role">Cliente Empresarial</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80"
+                        alt="Cliente"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <p class="testimonial-quote">
+                        "Atendimento personalizado e atenção aos detalhes. A
+                        equipe demonstrou total conhecimento técnico e me deixou
+                        seguro durante todo o processo judicial."
+                      </p>
+                      <p class="testimonial-author">Carlos Eduardo</p>
+                      <p class="testimonial-role">Cliente Trabalhista</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80"
+                        alt="Cliente"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <p class="testimonial-quote">
+                        "Fui muito bem atendida e orientada em todas as etapas.
+                        O resultado superou minhas expectativas. Gratidão por
+                        todo empenho e dedicação!"
+                      </p>
+                      <p class="testimonial-author">Mariana Silva</p>
+                      <p class="testimonial-role">Cliente Civil</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-btn carousel-btn-next"
+              id="nextBtn"
+              aria-label="Próximo depoimento"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators" id="carouselIndicators">
+            <button
+              class="indicator active"
+              data-slide="0"
+              aria-label="Ir para depoimento 1"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="1"
+              aria-label="Ir para depoimento 2"
+            ></button>
+            <button
+              class="indicator"
+              data-slide="2"
+              aria-label="Ir para depoimento 3"
+            ></button>
+          </div>
+        </div>
+      </section>
+      <!-- END: TestimonialsSection -->
+    </main>
+
+    <!-- BEGIN: MainFooter -->
+    <footer class="footer" id="contato">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Column 1: Contact Form -->
+          <div class="footer-column">
+            <h3 class="footer-title">Contato</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label class="sr-only" for="name">Nome</label>
+                <input
+                  class="form-input"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="phone">Telefone</label>
+                <input
+                  class="form-input"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefone"
+                  type="tel"
+                  required
+                />
+              </div>
+              <!-- Added email field for better contact management -->
+              <div class="form-group">
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  class="form-input"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message">Mensagem</label>
+                <textarea
+                  class="form-input"
+                  id="message"
+                  name="message"
+                  placeholder="Mensagem"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-primary btn-full" type="submit">
+                ENVIAR MENSAGEM
+              </button>
+              <!-- Added status message area -->
+              <div
+                id="formStatus"
+                style="margin-top: 1rem; text-align: center; font-size: 0.9rem"
+              ></div>
+            </form>
+          </div>
+
+          <!-- Column 2: Contact Info -->
+          <div class="footer-column">
+            <h3 class="footer-title">Informações de Contato</h3>
+            <ul class="contact-info">
+              <li class="contact-item">
+                <svg
+                  class="contact-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <span>Av. Paulista, 1000 - São Paulo, SP</span>
+              </li>
+              <li class="contact-item">
+                <svg
+                  class="contact-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <span>(11) 3256-4559</span>
+              </li>
+              <li class="contact-item">
+                <svg
+                  class="contact-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <span>contato@silvaassociados.com</span>
+              </li>
+              <li class="contact-item">
+                <svg
+                  class="contact-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A11.953 11.953 0 0012 13.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 003 12c0 .778.099 1.533.284 2.253m0 0c.244.722.564 1.403.936 2.028"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <span>www.silvaassociados.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Map -->
+          <div class="footer-column">
+            <h3 class="footer-title">Localização</h3>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977908733166!2d-46.65704968502205!3d-23.564630384681862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7dbf9ff57%3A0x4ca8eb5c4f7ecca9!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização do escritório Silva & Associados"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer Bar -->
+      <div class="footer-bottom">
+        <div class="container">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#areas">Áreas de Atuação</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- END: MainFooter -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
